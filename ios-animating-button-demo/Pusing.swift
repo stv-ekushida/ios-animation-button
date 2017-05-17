@@ -65,8 +65,8 @@ class Pushing: CALayer {
     func createOpacityAnimation() -> CAKeyframeAnimation {
         let opacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
         opacityAnimation.duration = animationDuration
-        opacityAnimation.values = [0.4, 0.8, 1]
-        opacityAnimation.keyTimes = [0, 0,2, 1]
+        opacityAnimation.values = [0.4, 0.8, 0]
+        opacityAnimation.keyTimes = [0, 0.2, 1]
 
         return opacityAnimation
     }
